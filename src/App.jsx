@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     setIsLoading(true);
-    const url = "http://www.omdbapi.com/?s=movie&apikey=1ae7cf34";
+    const url = "https://www.omdbapi.com/?s=movie&apikey=1ae7cf34";
     fetch(url)
       .then((response) => {
         if (response.ok) {
@@ -30,7 +30,7 @@ function App() {
 
   const handleSearch = () => {
     setIsLoading(true);
-    const url = `http://www.omdbapi.com/?t=${searchTerm}&apikey=1ae7cf34`;
+    const url = `https://www.omdbapi.com/?t=${searchTerm}&apikey=1ae7cf34`;
     console.log(url);
     fetch(url)
       .then((response) => {
